@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* z-index: -1; */
+}
+body{
+    font-family: 'playball', cursive;
+    line-height: 1.5;
+    background-color: wheat;
+}
+/* Nav Bar========= */
+.top{
+    margin: auto;
+    padding: 0px;
+    list-style: none;
+    margin-top: -18vh;
+}
+.top li{
+    width: 278.5px;
+    float: left;
+    height: 40px;
+    background-color: red;
+    opacity: 1;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 2px;
+}
+.top li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.top li a:hover{
+    background-color: #ff8800;
+}
+.top li ul li{
+    display: none;
+}
+.top li:hover ul li{
+    display: block;
+}
+/* End of nav bar============= */
+
+/* Menu========== */
+/* Breakfast======== */
+/* Cards=========== */
+.h1{
+    align-items: center;
+    text-align: center;
+    font-size: 55px;
+    color: orangered;
+}
+#food{
+    padding: 20px;
+    margin-top: 18vh;
+}
+.food-container{
+    max-width: 90vw;
+    margin:  auto;
+}
+.food-card{
+    position: relative;
+    background: linear-gradient(rgba(205,96,0,0.7),rgba(205,96,0,0.9));
+    margin: 20px 0;
+    color: black;
+    overflow: hidden;
+    padding: 3px;
+    border-radius: 16px;
+    border: 1px solid orange;
+    box-shadow: 2px 3px 1px 1px #cd6100;
+}
+#food img {
+width:100%;
+/* min-height: 100%; */
+display: block;
+transition: transform 4s;
+}
+/* .img-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 4s;
+} */
+img-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 20px;
+    opacity: 0;
+    color: black;
+    transition: opacity 4s;
+}
+.img-text h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+/* .food-card:hover img{
+    opacity: 0.4;
+    transform: scale(1.3);
+} */
+.food-card:hover .img-text,
+.food-card:hover .img-footer{
+    opacity: 1;
+}
+.food-btn{
+    display: inline-block;
+    background: black;
+    text-decoration: sandybrown;
+    padding: 12px 32px;
+    color: white;
+    font-weight: bold;
+    border-radius: 180px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    outline: none;
+}
+ .food-btn:hover{
+    color: red;
+    background: white;
+    /* border: black; */
+    outline: none;
+}
+.fas{
+    font-size: 30px;
+}
+@media screen and (min-width: 576px){
+
+    .food-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px;
+    }
+}
+@media screen and (min-width: 500px){
+    .food-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 16px;
+    }
+}
+/* End of Cards=============== */
+
+
+/* End of Breakfast========= */
+/* End of Menu============ */
+/* About us========= */
+#aboutuss[
+    margin-bottom: 25px;
+]
+.text-center{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: orange;
+}
+.t1{
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.img-wrap{
+width: 150%;
+margin-top: 120px;
+}
+.img-wrap img{
+    width: 100%;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px orange;
+    
+    height: 50vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Gallery Section========= */
+/* #gallery{
+    padding: 40px;
+    background: white;
+}
+.gallery-item{
+    background: linear-gradient (rgba(241,161,13))rgb(rgb(255,165,0));
+}
+.gallery-item img{
+    display: block;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+.gallery-item img:hover{
+    0pacity: 0;
+}
+@media screen and (min-width: 576px){
+    #gallery-center{
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+    }
+}
+@media screen and (min-width: 992px){
+    #gallery-center{
+        grid-template-columns: repeat(4, 1fr);
+    }
+} */
+
+/* End of Gallery Section ============ */
+/* End of About us========= */

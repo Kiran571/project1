@@ -1,0 +1,322 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* z-index: -1; */
+}
+body{
+    font-family: 'playball', cursive;
+    line-height: 1.5;
+    background-color: wheat;
+}
+/* Nav Bar========= */
+.top{
+    margin: auto;
+    padding: 0px;
+    list-style: none;
+}
+.top li{
+    width: 278.5px;
+    float: left;
+    height: 40px;
+    background-color: red;
+    opacity: 1;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 2px;
+}
+.top li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.top li a:hover{
+    background-color: #ff8800;
+}
+.top li ul li{
+    display: none;
+}
+.top li:hover ul li{
+    display: block;
+}
+/* End of nav bar============= */
+
+/* Header=========== */
+.header{
+    min-height: 65vh;
+    background: linear-gradient(rgba(74,25,22,01), rgba(76,56,26,26)) fixed ;
+   background-image: url(images/background6.jpg);
+   margin: auto;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /* position: relative; */
+    /* background-attachment: fixed; */
+    width: 100%;
+    height: 50%;
+    align-items: center;  
+}   
+.hero .title{
+    color: white;
+    font-family: playball;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    width: 30%;
+
+    border-radius: 200px;
+    font-weight: bold;
+    background: orange;
+    
+    color: rgb(231, 238, 170);
+    cursor: pointer;
+    border: 3px solid orange;
+    margin-top: 10px;
+    text-align: center;
+}
+.hero-button:hover{
+    background: white;
+    color: red;
+    border:none;
+}
+.pulsate{
+    animation: pulsate 3s ease-in-out;
+    animation-iteration-count: infinite;
+    opacity: .3;
+    color: black;
+
+}
+@-webkit-keyframes pulsate{
+    0%{
+        opacity: .5;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .5;
+    }
+}
+/* End of Header=========== */
+
+/* ============varities=========== */
+.title-text{
+    font-size: 40px;
+    text-align: center;
+}
+.embed{
+    opacity: 0;
+}
+#about{
+    padding: 40px;
+    color: crimson;
+}
+.about{
+    margin: 30px  0;
+    display: flex;
+    text-align: center;
+
+    padding: 60px 0;
+    color: black;
+    background: white;
+}
+.about-icon .fas{
+    font-size: 60px;
+    color: orange;
+    margin-left: auto;
+}
+.about-subtitle{
+    text-transform: capitalize;
+    color: orange;
+    font-size: 30px;
+}
+.about-info{
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.about-icon:hover .fas,
+.about-subtitle:hover{
+    transition: transform 2s ease, color 2s ease;
+    transform: translateY(-10px);
+    color: orangered;
+    cursor: pointer;
+}
+@media screen and (min-width: 576px){
+    .about-center{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .about{
+        flex: 0 0 calc(50% - 15px);
+    }
+}
+@media screen and (min-width: 972px){
+    .about{
+        flex: 0 0 calc(33.3% - 16px);
+    }
+}
+/* ===========End of Varieties========= */
+
+
+/* social icons============*/
+#social-icons{
+    height: 150px;
+    background: white;
+    text-align: center;
+    padding: 50px 0 50px 0;
+
+}
+#footer a{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 40px;
+    border-radius: 5px;
+    transition: transform 2s ease, color 2s ease;
+}
+#social-icons a:hover{
+    transform: translateY(-20px);
+}
+.facebook{
+    color:#3b5998;
+}
+.twitter{
+    color: #38a1f3;
+}
+.instagram{
+    color: #e1306c;
+}
+.pinterest{
+    color: rgb(245, 9, 9);
+}
+/* End of Social icons========== */
+/* * footer=========== */
+.footer{
+    background: black;
+    text-align: center;
+    color: white;
+}
+.footer-text{/
+    text-transform: uppercase;
+    color: wheat;
+    font-size: 400px;
+    margin-top: 200px;
+}
+/* End of footer=========== */
+
+/* Menu========== */
+/* Breakfast======== */
+/* Cards=========== */
+#food{
+    padding: 20px;
+}
+.food-container{
+    max-width: 90vw;
+    margin: 0 auto;
+}
+.food-card{
+    position: relative;
+    background: linear-gradient(rgba(205,96,0,0.7),rgba(205,96,0,0.9));
+    margin: 20px 0;
+    color: black;
+    overflow: hidden;
+    padding: 3px;
+    border-radius: 16px;
+    border: 1px solid orange;
+    box-shadow: 2px 3px 1px 1px #cd6100;
+}
+#food img {
+width:100%;
+min-height: 100%;
+display: block;
+transition: transform 4s;
+}
+/* .img-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 4s;
+} */
+img-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 20px;
+    opacity: 0;
+    color: black;
+    transition: opacity 4s;
+}
+.img-text h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+/* .food-card:hover img{
+    opacity: 0.4;
+    transform: scale(1.3);
+} */
+.food-card:hover .img-text,
+.food-card:hover .img-footer{
+    opacity: 1;
+}
+.food-btn{
+    display: inline-block;
+    background: black;
+    text-decoration: sandybrown;
+    padding: 12px 32px;
+    color: white;
+    font-weight: bold;
+    border-radius: 180px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    outline: none;
+}
+ .food-btn:hover{
+    color: red;
+    background: white;
+    /* border: black; */
+    outline: none;
+}
+.fas{
+    font-size: 30px;
+}
+@media screen and (min-width: 576px){
+
+    .food-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px;
+    }
+}
+@media screen and (min-width: 500px){
+    .food-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 16px;
+    }
+}
+/* End of Cards=============== */
+
+
+/* End of Breakfast========= */
+/* End of Menu============ */
+
