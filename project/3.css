@@ -17,7 +17,7 @@ body{
     list-style: none;
 }
 .top li{
-    width: 270.5px;
+    width: 275.97px;
     float: left;
     height: 40px;
     background-color: red;
@@ -234,4 +234,47 @@ section .container .contactform .formbox .inputbox input[type="submit"]{
 section .container .contactform .formbox .inputbox input[type="submit"]:hover{
     background: red;
 
+}
+/* Feedback=========== */
+fieldset{
+    
+    width: 750px;
+    height: 750px;
+    border-radius: 30px;
+    background-color: orange;
+    /* text-align: center; */
+}
+.feed{
+    /* margin-top: 70px; */
+    background-color: wheat;
+}
+.feed1{
+    margin-top: 70px; 
+}
+td{
+    text-decoration: none;
+    font-size: 18px;
+    text-decoration-style: solid;
+}
+input{
+    width: 182px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    text-indent: 5px;
+}
+input[TYPE="submit"]:hover{
+    background-color: red;
+}
+input[TYPE="reset"]:hover{
+    background-color: red;
+}
+textarea{
+    width: 182px;
+    border-radius: 10px;
+    outline: none;
+    text-indent: 5px;
+}
+table{
+    line-height: 30px;
 }
